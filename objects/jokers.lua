@@ -175,7 +175,7 @@ if Ortalab.config.placeholders then
                 return false
             end,
             loc_vars = function(self, info_queue, card)
-		return {vars = {card.ability.key}}
+		return {vars = {card.config.center.key}}
             end
         })
     end
