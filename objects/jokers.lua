@@ -175,8 +175,7 @@ if Ortalab.config.placeholders then
                 return false
             end,
             loc_vars = function(self, info_queue, card)
-                info_queue[#info_queue+1] = {generate_ui = ortalab_artist_tooltip, key = 'no_demo', title = 'Not In Demo'}
-		return {vars = {card.key}}
+		return {vars = {card.ability.key}}
             end
         })
     end
