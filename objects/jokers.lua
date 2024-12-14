@@ -166,7 +166,7 @@ if Ortalab.config.placeholders then
             pos = {x = 8, y = 9},
             loc_txt = {
                 name = 'Locked',
-                text = {'{E:1}???'}
+                text = {#1#}
             },
             discovered = true,
             ortalab_demo_card = true,
@@ -176,6 +176,7 @@ if Ortalab.config.placeholders then
             end,
             loc_vars = function(self, info_queue, card)
                 info_queue[#info_queue+1] = {generate_ui = ortalab_artist_tooltip, key = 'no_demo', title = 'Not In Demo'}
+		return {vars = {card.key}}
             end
         })
     end
