@@ -166,7 +166,7 @@ if Ortalab.config.placeholders then
             pos = {x = 8, y = 9},
             loc_txt = {
                 name = 'Locked',
-                text = {#1#}
+                text = {'#1#'}
             },
             discovered = true,
             ortalab_demo_card = true,
